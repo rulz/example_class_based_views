@@ -1,5 +1,5 @@
 """
-Django settings for example1 project.
+Django settings for project project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -55,9 +55,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.static",
 )
 
-ROOT_URLCONF = 'example1.urls'
+ROOT_URLCONF = 'project.urls'
 
-WSGI_APPLICATION = 'example1.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 
 # Database
@@ -90,4 +90,4 @@ USE_TZ = True
 STATIC_URL = os.getenv('STATIC_URL', '/static/')
 STATIC_ROOT = os.getenv('STATIC_ROOT', os.path.join(BASE_DIR, 'staticfiles'))
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR,'example1' ,'templates'))
+TEMPLATE_DIRS = (os.path.join(BASE_DIR,'project' ,'templates'))
